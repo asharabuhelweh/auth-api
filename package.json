@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "npm": "7.x"
+  },
   "scripts": {
     "test": "jest --coverage --verbose",
     "start": "node index.js",
