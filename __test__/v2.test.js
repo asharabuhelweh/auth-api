@@ -79,14 +79,14 @@ describe("V2 routes", () => {
         let updated = {
             name: "dress",
             color: "red",
-            size: "Small"
+            size: "large"
         }
 
         let updateObj = await request.put(`/api/v2/clothes/${id}`).set(`Authorization`, token).send(updated);
 
 
         expect(updateObj.status).toEqual(200);
-        expect(updateObj.body.size).toEqual("Small");;
+        expect(updateObj.body.size).toEqual("large");;
     });
 
 
